@@ -3,16 +3,9 @@ require_once '../../vendor/autoload.php';
 include "../../config/config.php";
 
 
-$code ="";
-$mobile="";
-if (isset($_POST['code'])) {
-    $code = $_POST['code'];
-    $mobile = $_POST['mobile'];
-}
-else{
-   echo false;
-    exit();
-}
+$code ="PWReTUAH";
+$mobile="0549833352";
+
 
 
 $sql = "SELECT * FROM regCode WHERE code=? AND mobile=?";

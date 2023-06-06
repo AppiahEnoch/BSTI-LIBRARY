@@ -94,6 +94,7 @@ function sendEmailVerificationCode() {
 function checkRegCode(registration_code, userMobile) {
   showSpin(1);
 
+  alert("check ")
 
   $.ajax({
     type: 'post',
@@ -106,7 +107,7 @@ function checkRegCode(registration_code, userMobile) {
     dataType: 'text',
     success: function (data, status) {
 
-      alert( data)
+     
       hideAllSpin();
 
       if (data == '1') {
