@@ -94,7 +94,7 @@ function sendEmailVerificationCode() {
 function checkRegCode(registration_code, userMobile) {
   showSpin(1);
 
-  alert("check ")
+
 
   $.ajax({
     type: 'post',
@@ -130,7 +130,7 @@ function checkRegCode(registration_code, userMobile) {
       }
     },
     error: function (xhr, status, error) {
-      alert("error");
+
       hideAllSpin();
       showToast(
         'aeToastE',
