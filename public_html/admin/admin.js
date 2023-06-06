@@ -142,7 +142,7 @@ function send_code() {
 // funtion to generate random code with mixture of different characters only numbers and letters
 function generate_code(code_length) {
   var code = '';
-  var possible = 'ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz123456789';
+  var possible = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz123456789';
   for (var i = 0; i < code_length; i++)
     code += possible.charAt(Math.floor(Math.random() * possible.length));
   document.getElementById('gen_code').value = code;
