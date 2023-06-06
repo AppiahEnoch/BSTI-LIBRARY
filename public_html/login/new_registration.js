@@ -129,6 +129,7 @@ function checkRegCode(registration_code, userMobile) {
       }
     },
     error: function (xhr, status, error) {
+      alert("error");
       hideAllSpin();
       showToast(
         'aeToastE',
