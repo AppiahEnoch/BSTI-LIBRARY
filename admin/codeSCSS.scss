@@ -1,0 +1,83 @@
+$codeWrapper-background-color: #F2F8FF;
+$codeWrapper-border-color: #D3E2F0;
+$btn-primary-background-color: #007BFF;
+$form-control-border-color: #B4C7E7;
+$col-6-link-color: #007BFF;
+$col-6-link-hover-color: #0056b3;
+$registrationForm-icon-color: #007BFF;
+
+$link-hover-color: #0056b3;
+$button-hover-color: #0056b3;
+$button-text-color: #FFFFFF;
+
+
+
+
+
+
+#codeWrapper {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  width: 20rem;
+  height: 22rem;
+  border-style: solid;
+  border-width: .1rem;
+  border-color: $codeWrapper-border-color;
+  background-color: $codeWrapper-background-color;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: $btn-primary-background-color;
+  color: $button-text-color;
+
+  &:hover{
+    background-color: $button-hover-color;
+  }
+}
+
+.form-control {
+  width: 100%;
+  border-color: $form-control-border-color;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.col-12 .row .col-6 {
+  color: $col-6-link-color;
+}
+
+#wrapper-col-6 a {
+  text-decoration: none;
+}
+
+#wrapper-col-6 a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: $col-6-link-hover-color;
+}
+
+#registrationForm i {
+  color: $registrationForm-icon-color;
+}
+
+#lbGroupCode{
+    color: $btn-primary-background-color;
+}
+
+.input-group-text {
+  #excel_template {
+      transition: transform 0.3s ease-in-out; // Transition for a smooth zoom effect
+
+      &:hover {
+          transform: scale(2.2); // Zoom the image to 120% of its original size
+      }
+  }
+}
+
+
+
+
