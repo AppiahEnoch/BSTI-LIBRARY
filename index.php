@@ -1,3 +1,6 @@
+
+<?php include 'SS/SESSION_CLR.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -172,7 +175,7 @@
                 
                   
                     class="btn"
-                    href="#newBooks"
+                    href="search/page.php"
                     role="button"
                   
                   >

@@ -1,14 +1,9 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
 
-        
 function myAjax1() {
   $.ajax({
     type: "post",
     data: {
-      id: "novariable",
+      id: id,
     },
     cache: false,
     url: "",
@@ -389,7 +384,6 @@ function getSelectedText(selectId) {
 
 
 function aeDownload(filePath) {
-  // aeDownload("https://example.com/path/to/your/file.pdf");
   const fileName = filePath.split("/").pop();
 
   // Create a new anchor element with the file path as the href attribute
@@ -565,10 +559,31 @@ function isFileImage2(fileId) {
   }
 }
 
+function isFilePDF2(fileId) {
+  var input = document.getElementById(fileId);
+  if (input.files && input.files[0]) {
+      var file = input.files[0];
+      var size = file.size / 1024 / 1024; // size in MB
+      var type = file.type;
+      if (type !== "application/pdf" && type !== "application/vnd.openxmlformats-officedocument.wordprocessingml.document") {
+          showToast("aeToastE", "ONLY PDF OR DOCX FILE ALLOWED", "Please Choose PDF or DOCX File", 20);
+          document.getElementById(fileId).value = "";
+          return false;
+      } else if (size > 3) {
+          showToast("aeToastE", "FILE TOO LARGE", "Your file is too large", 20);
+          document.getElementById(fileId).value = "";
+          return false;
+      } else {
+          return true;
+      }
+  }
+}
+
+
 
 
 function showWrapper4(idsToShow, prefix, count) {
-  //showWrapper4(['wrapper2', 'wrapper3'], 'wrapper', 4);
+  // toggleWrappers(['wrapper2', 'wrapper3'], 'wrapper', 4);
   idsToShow = idsToShow.map(id => id.startsWith('#') ? id : '#' + id);
 
   // generate ids
@@ -624,10 +639,24 @@ function showWrapper5(idsToShow, prefix, count) {
   });
 }
 
-
-function aeloading() {
-  var spinnerContainer = document.getElementById('spinner-container');
-  
-  // Toggle the display of the spinner-container
-  spinnerContainer.style.display = (spinnerContainer.style.display === "none") ? "flex" : "none";
+function updateImageView(imageId, imageUrl) {
+  document.getElementById(imageId).src = imageUrl;
 }
+
+
+
+  function aeModal(modalId) {
+    var modalElement = document.getElementById(modalId);
+    var modalInstance = new bootstrap.Modal(modalElement, {
+      keyboard: false
+    });
+
+    if (modalInstance._isShown) {
+      modalInstance.hide();
+    } else {
+      modalInstance.show();
+    }
+  }
+
+
+

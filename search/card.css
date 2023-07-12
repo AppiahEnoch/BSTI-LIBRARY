@@ -1,0 +1,36 @@
+.card {
+  min-width: 15rem;
+  min-height: 15rem;
+  background-color: white;
+  color: black; /* make sure the initial color of the text is black */
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease; /* animate the zooming and color change */
+}
+
+.card:hover {
+  transform: scale(1.1); /* zoom the card on hover */
+  background-color: rgb(157, 157, 238); /* change background color to blue */
+  color: white; /* change text color to white */
+  cursor: pointer;
+  z-index: 99;
+}
+
+@media (max-width: 768px) {
+  .card:hover {
+    transform: scale(1); /* reset the zoom effect on medium screens */
+    background-color: rgb(157, 157, 238); /* change background color to blue */
+    color: white; /* change text color to white */
+  }
+}
+.center-elements {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
+.center-elements img {
+  max-width: 5rem;
+  max-height: 5rem;
+}/*# sourceMappingURL=card.css.map */

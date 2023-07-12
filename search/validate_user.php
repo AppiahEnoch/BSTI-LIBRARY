@@ -2,7 +2,11 @@
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
+
+    echo 0;
     exit();
-} 
+}
+
+echo 1;
+
 ?>

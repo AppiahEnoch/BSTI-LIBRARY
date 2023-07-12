@@ -1,3 +1,5 @@
+
+<?php include '../SS/SESSION_CLR.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

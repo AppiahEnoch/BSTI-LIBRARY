@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="admin-lg.css" />
 
     <link rel="stylesheet" href="animation.css" />
+    
   </head>
   <body>
     <div id="fixed-Header-wrapper" class="row m-0 p-0">
@@ -165,7 +166,7 @@
                 <div class="dropdown">
                   <a
                     class="btn btn-secondary"
-                    href="#"
+                    href="../addbook/add_book.php"
                     role="button"
                     aria-expanded="false"
                   >
@@ -190,7 +191,7 @@
                 <div class="dropdown">
                   <a
                     class="btn btn-secondary"
-                    href="#"
+                    href="../addshelf/add_shelf.php" 
                     role="button"
                     aria-expanded="false"
                   >
@@ -210,32 +211,32 @@
                   </ul>
                 </div>
               </li>
-
-              <li class="nav-item d-none">
+              <li class="nav-item">
                 <div class="dropdown">
                   <a
-                    class="btn btn-secondary dropdown-toggle"
-                    href="#"
+                    class="btn btn-secondary"
+                    href="#" 
                     role="button"
-                    data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Staff
+                    Request
+
+                    <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
 
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu d-none">
                     <li id="gh">
-                      <a class="dropdown-item" href="#"
-                        >Upload Student Results</a
-                      >
+                      <a class="dropdown-item" href="#">Delete One User</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Download Timetable</a>
+                      <a class="dropdown-item" href="#">Delete all Users</a>
                     </li>
                     <li><a class="dropdown-item" href="#">Other Action</a></li>
                   </ul>
                 </div>
               </li>
+
+             
 
               <li class="nav-item d-none">
                 <div class="dropdown">
@@ -619,7 +620,7 @@
     ></script>
 
     <script src="../ae.js"></script>
-    <script src="admin.js"></script>
+    <script src="admin.js?version=<?php echo filemtime('admin.js'); ?>"></script>
     <script src="delete.js?version=<?php echo filemtime('delete.js'); ?>"></script>
     <script src="code.js?version=<?php echo filemtime('code.js'); ?>"></script>
   </body>
