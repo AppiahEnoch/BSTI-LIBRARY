@@ -3,8 +3,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 
     // Add scrollbar styling
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow: scroll;
+
     max-height: 30rem;
 
     // Make the table fully responsive
