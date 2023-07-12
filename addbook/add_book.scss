@@ -273,3 +273,22 @@ position: absolute;
     visibility: hidden;
   }
 }
+
+
+
+
+#spinner-container {
+  display: flex;  // use flexbox for centering
+  flex-direction: column;  // stack items vertically
+  justify-content: center;  // center horizontally
+  align-items: center;  // center vertically
+  position: fixed;  // keep the spinner at the center regardless of scroll
+  top: 0; 
+  left: 0; 
+  width: 100%;  // full width
+  height: 100%;  // full height
+  background: rgba(0, 0, 0, 0.5);  // semi-transparent black background
+  color: #f2f2f2;
+}
+
+

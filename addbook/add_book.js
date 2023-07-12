@@ -3,10 +3,8 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-
-
 $(document).ready(function () {
-    
+
     // Listen for change event on the classification select element
     $("#classification").change(function () {
         var selectedValue = $(this).val();
@@ -47,6 +45,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
+
   $('#book-info-form').on('submit', function(e) {
       e.preventDefault();
       // Create new FormData instance
@@ -69,7 +68,7 @@ $(document).ready(function() {
   formData.append('cellnumber', cellnumber);
     var material_number = document.getElementById("material_number").textContent;
       formData.append('material_number', material_number);
-
+      aeLoading()
       $.ajax({
           type: 'POST',
           url: 'add_book_.php',
@@ -94,7 +93,7 @@ $(document).ready(function() {
           },
           error: function(error) {
               console.error('An error occurred:', error);
-
+              aeLoading()
               // You could add additional error handling here
           }
       });
@@ -150,3 +149,5 @@ function get_shelf_description() {
       },
   });
 }
+
+

@@ -49,14 +49,17 @@
 
 
 
-    <div id="spinner-container" class="spinner-container text-center" style="display: none">
+
+<div
+      id="spinner-container"
+      class="spinner-container text-center d-none"
+    >
       <div class="spinner-border" role="status">
         <span class="visually-hidden">Loading...</span>
+        
       </div>
-      <p class="loading-text">Processing ...</p>
+      <p class="">Processing ...</p>
     </div>
-
-
 
 
 
