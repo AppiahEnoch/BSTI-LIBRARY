@@ -79,11 +79,15 @@ $(document).ready(function() {
           processData: false,
           success: function(response) {
 
-            // reset form             $('#book-info-form')
-            $('#book-info-form'). trigger("reset");
+            // reload window
+            window.location.reload();
 
-            init() 
-            fetchData()
+
+            // reset form             $('#book-info-form')
+         //   $('#book-info-form'). trigger("reset");
+
+          //  init() 
+          //  fetchData()
 
             showToast("aeToastS", "SUCCESS!", "New Material Added  Successfully", "20");
         
