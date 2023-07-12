@@ -172,6 +172,7 @@
                   </option>
                   <option value="music-and-movies">Music and Movies</option>
                   <option value="language-learning">Language Learning</option>
+                  <option value="News">Magazines and News</option>
                 </select>
               </div>
             </div>
