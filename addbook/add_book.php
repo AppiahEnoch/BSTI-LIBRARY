@@ -17,7 +17,7 @@
   </head>
   
   <body>
-    <div class="row justify-content-center gap-5 m-auto mb-0 mt-0">
+    <div class="row justify-content-center gap-5 m-auto mb-0 mt-1">
       <!-- This column will be hidden on xs screens, but visible on medium and up screens -->
       <div id="table-wrapper" class="col-md-6 d-none d-md-block mt-0 pt-0">
 
@@ -176,7 +176,7 @@
                 </select>
               </div>
             </div>
-            <div class="input-group mb-3">
+            <div class="input-group mb-1">
               <span class="input-group-text">
                 <i class="fa fa-pencil-alt" aria-hidden="true"></i>
               </span>
@@ -249,7 +249,7 @@
                 </div>
               </div>
             </div>
-            <div class="input-group mb-0">
+            <div class="input-group mb-0 mt-0">
               <span class="input-group-text">
                 <i class="fa fa-pencil-alt" aria-hidden="true"></i>
               </span>
