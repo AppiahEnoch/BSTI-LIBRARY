@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Create book</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -20,13 +20,12 @@
     <div class="row justify-content-center gap-5 m-auto mb-0 mt-5">
       <!-- This column will be hidden on xs screens, but visible on medium and up screens -->
       <div id="table-wrapper" class="col-md-6 d-none d-md-block mt-0 pt-0">
-
         <img  class="d-none" id="edit_imageview" src="../devimage/templatematerial.png" alt="">
         <input id="edit_image_file" class="d-none" type="file">
         <h3 id="edit-label" class="text-center mt-0">Edit</h3>
 
 
-        <div class="row ">
+        <div class="row">
           <table id="editable-table" class="table">
             <thead>
               <tr>
@@ -53,9 +52,9 @@
       <!-- This column will take up the full width on xs screens, and 9 columns on medium and up screens -->
       <div class="col-12 col-md-6 mb-0 p-0 mt-0">
         <div id="wrapper10" class="col text-center mb-0">
-          <h3 class="text-center">Add Material</h3>
-          <h4 class="text-center">
-            Material N0# <span id="material_number">7</span>
+          <h3 class="text-center m-0">Add Material</h3>
+          <h4 class="text-center m-0">
+            Material N0# <span id="material_number">0</span>
           </h4>
                    
         <a class="go-back" href="../ebook/page.php" data-bs-toggle="tooltip" data-bs-placement="top" title="E-BOOKS">
@@ -259,7 +258,7 @@
                 id="description"
                 name="description"
                 placeholder="Description"
-                rows="3"
+                rows="2"
               ></textarea>
             </div>
             <div class="col-12 mb-0">

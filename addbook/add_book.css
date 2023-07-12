@@ -106,8 +106,7 @@ h6.text-center {
 #table-wrapper {
   background-color: red;
   position: relative;
-  min-height: 37rem;
-  max-height: 37rem;
+  max-height: 30rem;
   min-width: 27rem;
   max-width: 27rem;
   background-color: white;
@@ -125,6 +124,7 @@ h6.text-center {
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
   margin-top: 0;
+  max-height: 35rem;
   box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.35);
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;

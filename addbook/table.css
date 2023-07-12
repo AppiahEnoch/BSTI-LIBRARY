@@ -2,8 +2,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   overflow-x: auto;
   overflow-y: auto;
-  min-height: 33rem;
-  max-height: 33rem;
+  max-height: 30rem;
   width: 100%;
   display: block;
 }
