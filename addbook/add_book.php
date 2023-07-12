@@ -17,7 +17,7 @@
   </head>
   
   <body>
-    <div class="row justify-content-center gap-5 m-auto mb-0 mt-1">
+    <div class="row justify-content-center gap-5 m-auto mb-0 mt-5">
       <!-- This column will be hidden on xs screens, but visible on medium and up screens -->
       <div id="table-wrapper" class="col-md-6 d-none d-md-block mt-0 pt-0">
 
@@ -26,7 +26,7 @@
         <h3 id="edit-label" class="text-center mt-0">Edit</h3>
 
 
-        <div class="row">
+        <div class="row ">
           <table id="editable-table" class="table">
             <thead>
               <tr>
@@ -51,7 +51,7 @@
       </div>
 
       <!-- This column will take up the full width on xs screens, and 9 columns on medium and up screens -->
-      <div class="col-12 col-md-6 mb-0 p-0">
+      <div class="col-12 col-md-6 mb-0 p-0 mt-0">
         <div id="wrapper10" class="col text-center mb-0">
           <h3 class="text-center">Add Material</h3>
           <h4 class="text-center">
@@ -63,7 +63,7 @@
       </a>
           <form
             id="book-info-form"
-            class="row d-flex align-items-center justify-content-center mt-1 mb-0"
+            class="row d-flex align-items-center justify-content-center mt-0 mb-0"
           >
 
    
@@ -249,7 +249,7 @@
                 </div>
               </div>
             </div>
-            <div class="input-group mb-0 mt-0">
+            <div class="input-group mb-0 ">
               <span class="input-group-text">
                 <i class="fa fa-pencil-alt" aria-hidden="true"></i>
               </span>
