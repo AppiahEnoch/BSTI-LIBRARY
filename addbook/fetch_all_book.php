@@ -3,7 +3,7 @@
 require_once '../config/config.php';
 
 // Prepare the SQL statement
-$sql = "SELECT * FROM book order by id desc";
+$sql = "SELECT * FROM book order by recdate desc";
 
 // Prepare the statement
 $stmt = $conn->prepare($sql);
