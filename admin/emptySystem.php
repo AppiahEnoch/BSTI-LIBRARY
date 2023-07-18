@@ -9,7 +9,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$tables = ['book', 'ebook', 'regcode', 'shelf', 'user0', 'user1'];
+$tables = ['book', 'ebook', 'regcode', 'shelf', 'user1'];
 
 foreach($tables as $table) {
     try {
