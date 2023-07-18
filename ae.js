@@ -662,6 +662,7 @@ function updateImageView(imageId, imageUrl) {
 
 
   function aeLoading() {
+
     var spinner = $('#spinner-container');
     if (spinner.hasClass('d-none')) {
       spinner.removeClass('d-none');

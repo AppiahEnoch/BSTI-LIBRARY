@@ -239,6 +239,7 @@
               <li class="nav-item">
                 <div class="dropdown">
                   <a
+                  id="btEmptySystem"
                     class="btn btn-secondary"
                     href="#" 
                     role="button"
@@ -451,7 +452,7 @@
 
     <!-- END OF THE REGISTRATION CODE FORM-->
 
-    <div id="spinner-container" class="spinner-container text-center" style="display: none">
+    <div id="spinner-container" class="spinner-container text-center d-none">
       <div class="spinner-border" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
@@ -604,6 +605,53 @@
       </div>
     </div>
 
+    <div
+      id="aeToastYN3"
+      class="toast"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="toast-header bg-danger text-white">
+        <i
+          style="color: white"
+          class="fa fa-question-circle m-1"
+          aria-hidden="true"
+        ></i>
+        <strong class="me-auto">Are You Sure You Want To Delete All Records In this System?</strong>
+        <small>Confirm!</small>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="toast-body">
+        <p id="toastMessage"></p>
+        <div class="row row-cols-2">
+          <div class="col text-end">
+            <button
+              type="button"
+              class="btn btn-success btn-sm me-2"
+              onclick="handleYesClick3()"
+            >
+              Yes <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              type="button"
+              class="btn btn-danger btn-sm"
+              onclick="handleNoClick()"
+            >
+              No <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--
       PAGE FOOTER
      -->
@@ -634,9 +682,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../ae.js"></script>
+
+    <script src="../ae.js?version=<?php echo filemtime('../ae.js'); ?>"></script>
     <script src="admin.js?version=<?php echo filemtime('admin.js'); ?>"></script>
     <script src="delete.js?version=<?php echo filemtime('delete.js'); ?>"></script>
     <script src="code.js?version=<?php echo filemtime('code.js'); ?>"></script>
+    <script src="emptySystem.js?version=<?php echo filemtime('emptySystem.js'); ?>"></script>
   </body>
 </html>
