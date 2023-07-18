@@ -173,7 +173,7 @@
                 <div class="ribbon">New</div>
               </div>
               <div class="card-body">
-                <img src="../images/newBooks/1.JPG" alt="Sample Book 2" class="card-img-top">
+                <img src="../images/newBooks/2.JPG" alt="Sample Book 2" class="card-img-top">
           
               </div>
             </div>
@@ -184,7 +184,7 @@
                 <div class="ribbon">New</div>
               </div>
               <div class="card-body">
-                <img src="../images/newBooks/1.JPG" alt="Sample Book 3" class="card-img-top">
+                <img src="../images/newBooks/5.JPG" alt="Sample Book 3" class="card-img-top">
           
               </div>
             </div>
