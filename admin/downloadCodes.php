@@ -11,14 +11,14 @@ $pdf = new \FPDF();
 $pdf->AddPage();
 
 // Add Logo
-$pdf->Image('ae.png',10,6,20);
+$pdf->Image('../devimage/round.jpg',10,6,20);
 
 // Set font
 $pdf->SetFont('Arial','B',16);
 
 // Add Brand Name
 $pdf->Cell(80,10,'',0,0);
-$pdf->Cell(30,10,'AECleanCodes',0,1);
+$pdf->Cell(30,10,'BSTI library',0,1);
 
 // Title
 $pdf->Cell(0,10,'User Registration Codes',0,1,'C');
@@ -34,10 +34,8 @@ $pdf->SetFont('Arial','',12);
 
 // Column headers
 $header = array('Mobile', 'Email', 'UL', 'Code');
-
 // Column widths
 $w = array(30, 90, 10, 60);
-
 // Colors for table header
 $pdf->SetFillColor(255, 0, 0);
 $pdf->SetTextColor(255);

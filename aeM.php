@@ -48,8 +48,6 @@
 <!-- END MY SPIN -->
 
 
-
-
 <div
       id="spinner-container"
       class="spinner-container text-center d-none"
@@ -60,8 +58,6 @@
       </div>
       <p class="">Processing ...</p>
     </div>
-
-
 
 
 <div id="aeToastYN" class="toast" role="alert" aria-live="assertive" aria-atomic="true">

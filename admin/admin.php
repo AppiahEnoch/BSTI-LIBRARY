@@ -87,7 +87,7 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Student handbook
+                    action
                     </a>
                   </div>
                 </li>
@@ -100,7 +100,7 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      E-learning
+                    action
                     </a>
                   </div>
                 </li>
@@ -113,7 +113,7 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Library
+                    action
                     </a>
                   </div>
                 </li>
@@ -126,7 +126,7 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      Fees
+                      action
                     </a>
                   </div>
                 </li>
@@ -233,6 +233,21 @@
                     </li>
                     <li><a class="dropdown-item" href="#">Other Action</a></li>
                   </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-secondary"
+                    href="#" 
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Empty System
+
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                  </a>
                 </div>
               </li>
 
