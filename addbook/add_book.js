@@ -78,6 +78,9 @@ $(document).ready(function() {
           processData: false,
           success: function(response) {
 
+            // alert response
+            alert(response);
+
             // reload window
             window.location.reload();
 

@@ -98,6 +98,7 @@ function fetchData() {
           var id = $(this).children().first().text();
           selected_row_id=id; //
           $('#edit_imageview').removeClass('d-none');
+          alert(imageUrl)
           updateImageView("edit_imageview", imageUrl);
         });
       } else {
