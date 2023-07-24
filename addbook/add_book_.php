@@ -20,7 +20,7 @@ $image_url = uploadImageWithUniqueName('material_image');
 
 
 // Insert into database
-$sql = "INSERT INTO book (material_number, material_type, shelfno, uniqueid, title, author, description, image_url, cellnumber, materialdate) 
+$sql = "INSERT INTO book (material_number, material_type, shelfno, uniqueid, title, author, `description`, image_url, cellnumber, materialdate) 
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $conn->prepare($sql);
@@ -80,3 +80,6 @@ function generateCode() {
     }
     return $randomString;
   }
+
+
+  echo $image_url;
