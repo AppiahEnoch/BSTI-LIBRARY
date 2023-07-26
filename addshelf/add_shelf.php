@@ -158,7 +158,7 @@
   <div class="toast-header bg-danger text-white">
       <i style="color:white" class="fa fa-exclamation-triangle me-2" aria-hidden="true"></i>
     <strong class="me-auto">Error!</strong>
-    <small>AECleanCodes</small>
+    <small>BSTI library</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
   </div>
   <div class="toast-body">

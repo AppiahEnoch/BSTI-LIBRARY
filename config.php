@@ -1,6 +1,6 @@
 <?php
 // BUSINESS SETTINGS
-$business_name = "AECleanCodes";
+$business_name = "BSTI library";
 //require_once './env/env.php';
 
 $email_sender="bstilibrary@gmail.com";

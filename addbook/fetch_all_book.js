@@ -11,6 +11,7 @@ function fetchData() {
     success: function (data) {
       if (data.status === "success") {
         $.each(data.data, function (index, record) {
+          
           var row = $("<tr></tr>");
           row.append($("<td></td>").text(record.id));
           row.append(

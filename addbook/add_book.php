@@ -296,7 +296,7 @@
           aria-hidden="true"
         ></i>
         <strong class="me-auto">Error!</strong>
-        <small>AECleanCodes</small>
+        <small>BSTI library</small>
         <button
           type="button"
           class="btn-close"
