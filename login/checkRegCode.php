@@ -14,7 +14,6 @@ else{
     exit();
 }
 
-
 $sql = "SELECT * FROM regcode WHERE code=? AND mobile=?";
 $stmt = $conn->prepare($sql); 
 $stmt->bind_param("ss", $code, $mobile);
