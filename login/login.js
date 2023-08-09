@@ -29,6 +29,7 @@ function validateLogin(username, password) {
 
      // alert(data)
 
+     
       if (data == 1) {
 
         window.location='../admin/admin.php'
