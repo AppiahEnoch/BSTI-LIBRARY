@@ -52,6 +52,7 @@ function validateLogin(username, password) {
     },
     error: function (xhr, status, error) {
       alert("Err:"+error);
+      hideAllSpin()
     },
   });
 }
