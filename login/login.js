@@ -51,7 +51,7 @@ function validateLogin(username, password) {
       }
     },
     error: function (xhr, status, error) {
-      alert(error);
+      alert("Err:"+error);
     },
   });
 }
