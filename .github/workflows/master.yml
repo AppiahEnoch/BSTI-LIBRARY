@@ -15,7 +15,7 @@ jobs:
       run: |
         lftp ftp://$USERNAME:$PASSWORD@ftp.bstilibrary.com -e "
         set ssl:verify-certificate no;
-        mirror -R . /httpdocs; 
+        mirror -R . /; 
         quit
         "
       env:
