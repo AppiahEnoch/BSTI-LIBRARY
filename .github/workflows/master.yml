@@ -1,19 +1,17 @@
-on: 
-  push:
-       branches:
-           - master
+on: push
 name: 🚀 Deploy website on push
 jobs:
- web-deploy:
-   name: 🎉 Deploy
-   runs-on: ubuntu-latest
-   steps:
-   - name: 🚚 Get latest code
-     uses: actions/checkout@v3
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.bstilibrary.com
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
    
-   - name: 📂 Sync files
-     uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-     with:
-       server: ${{ secrets.SERVER_NAME}}
-       username: ${{ secrets.USERNAME}}
-       password: ${{ secrets.SERVER_PASSWORD}}
