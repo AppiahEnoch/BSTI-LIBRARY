@@ -27,7 +27,7 @@ function validateLogin(username, password) {
     success: function (data, status) {
       hideAllSpin()
 
-      alert(data)
+     // alert(data)
 
      
       if (data == 1) {
