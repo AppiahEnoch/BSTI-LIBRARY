@@ -4,6 +4,9 @@ LOCALFILES/
 config/
 env/
 
+deploy.yml
+Force-Deploy.yml
+
 ##### Windows
 # Windows thumbnail cache files
 Thumbs.db
