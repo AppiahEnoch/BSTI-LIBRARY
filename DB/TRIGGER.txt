@@ -1,0 +1,30 @@
+DELIMITER //
+
+CREATE TRIGGER update_current_cell 
+AFTER INSERT ON book 
+FOR EACH ROW
+BEGIN
+    DECLARE shelf_capacity INT;
+    DECLARE books_in_cell INT;
+
+    -- Get shelf capacity
+    SELECT capacity INTO shelf_capacity 
+    FROM shelf 
+    WHERE shelfnumber = NEW.shelfno;
+
+    -- Get current number of books in the cell
+    SELECT COUNT(*) INTO books_in_cell 
+    FROM book 
+    WHERE shelfno = NEW.shelfno AND cellnumber = NEW.cellnumber;
+
+    -- Check if the current cell is full
+    IF books_in_cell >= shelf_capacity THEN
+        -- If it is, increase the current cell number in the shelf table
+        UPDATE shelf 
+        SET currentcell = currentcell + 1 
+        WHERE shelfnumber = NEW.shelfno;
+    END IF;
+END;
+//
+
+DELIMITER ;
