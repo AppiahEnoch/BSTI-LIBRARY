@@ -1,0 +1,48 @@
+@media (min-width: 540px) {
+  #navbarNavDropdown {
+    background-color: whitesmoke;
+  }
+  #navbarNavDropdown, .dropdown a{
+    background-color: transparent !important;
+    background-color: rgb(5, 5, 88);
+  }
+
+
+  #navbarNavDropdown, .dropdown a:hover {
+  color:blue;
+
+
+}
+
+#navbarNavDropdown .dropdown a{
+  width: 100%;
+  background-color: rgb(5, 5, 88);
+color: rgb(5, 5, 88);
+
+}
+
+.dropdown-menu .dropdown-item{
+  color: black;
+  background-color:white !important; 
+  color:  rgb(5, 5, 88);
+}
+
+#carousel-wrapper{
+  margin-top: 5.8rem;
+}
+
+
+#navbarNavDropdown .dropdown .dropdown-menu a:hover{
+  background-color: white ;
+  text-align: left;
+  background-color:  rgb(5, 5, 88);;
+color: blue;
+ 
+}
+
+
+}
+
+
+
+
