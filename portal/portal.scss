@@ -136,3 +136,32 @@ body {
 }
 
 
+
+
+.editable-field{
+  color: #f0f0f0;
+
+  i{
+    color: rgb(19, 4, 59);
+  }
+}
+
+
+#passport-wrapper{
+  min-height: 5rem;
+
+
+  #user-bio-img{
+    max-width: 5rem;
+    position: absolute;
+    top: 1rem;
+  }
+
+  
+}
+
+#bio-text-wrapper{
+  min-height: 20rem;
+
+ 
+}

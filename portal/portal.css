@@ -104,4 +104,24 @@ body {
 
 .col-sm img {
   max-height: 26rem;
+}
+
+.editable-field {
+  color: #f0f0f0;
+}
+.editable-field i {
+  color: rgb(19, 4, 59);
+}
+
+#passport-wrapper {
+  min-height: 5rem;
+}
+#passport-wrapper #user-bio-img {
+  max-width: 5rem;
+  position: absolute;
+  top: 1rem;
+}
+
+#bio-text-wrapper {
+  min-height: 20rem;
 }/*# sourceMappingURL=portal.css.map */

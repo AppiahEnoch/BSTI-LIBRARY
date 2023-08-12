@@ -1,0 +1,32 @@
+.notifications-modal-content {
+    
+    max-width: 20rem;
+    max-height: 30rem;
+    background-color: #e6f7ff; // Light blue background
+  
+    .modal-header {
+      background-color: #66b3ff; // Blue header
+      color: #ffffff; // White text
+    }
+  
+    .modal-body {
+      .notification-item {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #b3d1ff; // Separator line
+  
+        .fa-bell {
+          color: #0073e6; // Blue bell icon
+          margin-right: 0.5rem;
+        }
+  
+        .notification-message {
+          font-size: 0.9rem; // Message font size
+        }
+      }
+  
+      overflow-y: auto; // Vertical scroll if items are more
+    }
+  }
+  

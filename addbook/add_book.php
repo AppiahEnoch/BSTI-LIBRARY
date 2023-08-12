@@ -17,6 +17,10 @@
   </head>
   
   <body>
+  <a class="go-back2" href="../admin/admin.php" data-bs-toggle="tooltip" data-bs-placement="top" title="Go Back">
+          <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
+      </a>
+      
     <div class="row justify-content-center gap-5 m-auto mb-0 mt-5">
       <!-- This column will be hidden on xs screens, but visible on medium and up screens -->
       <div id="table-wrapper" class="col-md-6 d-none d-md-block mt-0 pt-0">
@@ -368,10 +372,7 @@
                   SHELF NO# <span id="shelf_count"></span>
                 </h5>
                 <h6 id="descword" class="m-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                  nisi. Aliquid qui labore doloribus quod quibusdam repellat
-                  velit commodi praesentium sunt delectus esse temporibus dolore
-                  voluptate asperiores eveniet, fugiat et.
+                    Loading...
                 </h6>
               </div>
             </div>

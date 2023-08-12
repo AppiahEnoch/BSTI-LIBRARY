@@ -28,11 +28,10 @@
   type="image/jpg"
   href="../devimage/round.jpg"
 />
+<link rel="stylesheet" href="login.css?version=<?php echo filemtime('login.css'); ?>" />
+<link rel="stylesheet" href="animation.css?version=<?php echo filemtime('animation.css'); ?>" />
+<link rel="stylesheet" href="loginSCSS.css?version=<?php echo filemtime('loginSCSS.css'); ?>" />
 
-    <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="animation.css" />
-    <link rel="stylesheet" href="loginSCSS.css" />
-    
   </head>
   <body>
     <div
@@ -767,12 +766,14 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../ae.js"></script>
-    <script src="username_password.js"></script>
-    <script src="new_registration.js"></script>
-    <script src="reset_password.js"></script>
-    <script src="forgot_password.js"></script>
-    <script src="login.js"></script>
+    <script src="../ae.js?version=<?php echo filemtime('../ae.js'); ?>"></script>
+<script src="username_password.js?version=<?php echo filemtime('username_password.js'); ?>"></script>
+<script src="new_registration.js?version=<?php echo filemtime('new_registration.js'); ?>"></script>
+<script src="reset_password.js?version=<?php echo filemtime('reset_password.js'); ?>"></script>
+<script src="forgot_password.js?version=<?php echo filemtime('forgot_password.js'); ?>"></script>
+<script src="login.js?version=<?php echo filemtime('login.js'); ?>"></script>
+
+
  
 
   </body>

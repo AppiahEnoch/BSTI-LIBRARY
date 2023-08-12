@@ -1,4 +1,9 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+  }
+$user_id=0;
+$_SESSION['user_id']=0;
 require_once '../vendor/autoload.php';
 include "../config/config.php";
 
@@ -27,6 +32,7 @@ $stmt->bind_param("ss",$username,$password);
 $stmt->execute();
 $result = $stmt->get_result();
 if ($row = $result->fetch_assoc()) {
+    $user_id=0;
    $userExist=1;
 }
 
@@ -39,15 +45,17 @@ $stmt->execute();
 $result = $stmt->get_result();
 if ($row = $result->fetch_assoc())
 {
+    $user_id=$row["user1_id"];
     $userExist=2;
 }
 
 
 
 if(($userExist==1)||($userExist==2)){  
-    session_start();
+ 
     $_SESSION['username']=$username;
     $_SESSION['password']=$password;
+    $_SESSION['user_id']=$user_id;
 
 }
 

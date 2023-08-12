@@ -135,7 +135,7 @@ function get_shelf_description() {
           if (response.status === 'success') {
               // Update the shelf number
               // alert response
-              alert(response);
+             // alert(response);
               $('#shelf_count').text(aeMShelfNo);
      
 

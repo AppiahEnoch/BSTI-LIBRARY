@@ -239,9 +239,7 @@ position: absolute;
 
 }
 
-#edit-label{
 
-}
 
 
 
@@ -292,3 +290,11 @@ position: absolute;
 }
 
 
+.go-back2{
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s;
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+}

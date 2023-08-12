@@ -24,7 +24,7 @@ if ($stmt->execute()) {
 
     // Prepare the description
     foreach($data as $index => $row) {
-        $description = "Shelf number {$row['shelfnumber']} has a capacity of {$row['capacity']}. ";
+        $description = "Shelf number {$row['shelfnumber']} has a capacity of {$row['capacity']}. cells and 20 books for each  Cell";
         $description .= "Currently, it contains {$row['currentcell']} Material(s). ";
         $description .= "It has a Class of  {$row['class1']} and  {$row['class2']}. ";
         $description .= "Additional description: {$row['description']}. ";

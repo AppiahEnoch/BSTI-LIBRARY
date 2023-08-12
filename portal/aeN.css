@@ -1,0 +1,25 @@
+.notifications-modal-content {
+  max-width: 20rem;
+  max-height: 30rem;
+  background-color: #e6f7ff;
+}
+.notifications-modal-content .modal-header {
+  background-color: #66b3ff;
+  color: #ffffff;
+}
+.notifications-modal-content .modal-body {
+  overflow-y: auto;
+}
+.notifications-modal-content .modal-body .notification-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #b3d1ff;
+}
+.notifications-modal-content .modal-body .notification-item .fa-bell {
+  color: #0073e6;
+  margin-right: 0.5rem;
+}
+.notifications-modal-content .modal-body .notification-item .notification-message {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=aeN.css.map */
