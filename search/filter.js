@@ -36,8 +36,6 @@ function sendData() {
         material_type: materialType.value
     };
 
-
-
     $.ajax({
         type: "POST",
         data: dataObject,
