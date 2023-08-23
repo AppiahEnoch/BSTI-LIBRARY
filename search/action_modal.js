@@ -56,6 +56,8 @@ alert('Handling Add to Reading List action');
 
 function handleRequestAction() {
     alert('Handling Request for Book action');
+
+    
     // Your logic here
 }
 
