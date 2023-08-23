@@ -684,6 +684,36 @@ function myAjax1() {
     }
 
   }
+
+  function isFilePDF3(fileUrl) {
+    return fetch(fileUrl, { method: 'HEAD' })  // Use HEAD request to get headers only
+        .then(response => {
+            if (response.ok) {
+                var type = response.headers.get("Content-Type");
+                var size = Number(response.headers.get("Content-Length")) / 1024 / 1024; // Size in MB
+                if (type !== "application/pdf") {
+                    showToast("aeToastE", "YOU MUST DOWN", "Please Choose PDF or DOCX File", 20);
+                    return false;
+                } else if (size > 3) {
+                    showToast("aeToastE", "FILE TOO LARGE", "Your file is too large", 20);
+                    return false;
+                } else {
+                    return true;
+                }
+            } else {
+                showToast("aeToastE", "ERROR", "Failed to fetch file", 20);
+                return false;
+            }
+        })
+        .catch(error => {
+            showToast("aeToastE", "ERROR", error.message, 20);
+            return false;
+        });
+}
+
+// Usage example:
+
+
   
   
     function aeModal(modalId) {
@@ -698,6 +728,25 @@ function myAjax1() {
         modalInstance.show();
       }
     }
+
+    function aeModal2(modalId) {
+      // Close all modals
+      var allModals = document.querySelectorAll('.modal');
+      allModals.forEach(modalElement => {
+          var instance = bootstrap.Modal.getInstance(modalElement);
+          if (instance && instance._isShown) {
+              instance.hide();
+          }
+      });
+  
+      // Open the intended modal
+      var targetModalElement = document.getElementById(modalId);
+      var targetModalInstance = new bootstrap.Modal(targetModalElement, {
+          keyboard: false
+      });
+      targetModalInstance.show();
+  }
+  
   
   
   

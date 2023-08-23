@@ -1,3 +1,6 @@
+var materialData=null;
+
+
 $(document).ready(function() {
 
     $('#card-row').on('click', '.card', function() {
@@ -46,6 +49,7 @@ function validate(id, tableName) {
 
 
 function showModel(id, tableName) {
+  materialData=null;
     $.ajax({
       type: "post",
       data: {
@@ -56,7 +60,8 @@ function showModel(id, tableName) {
       url: "fetch_material.php",
       dataType: "json",
       success: function (data, status) {
-        aeModal("aeB")
+        materialData=data;
+        aeModal("actionModal")
        
       },
       error: function (xhr, status, error) {

@@ -12,9 +12,17 @@
     />
     <link rel="stylesheet" href="./style.css?
     <?php echo filemtime("style.css"); ?>
-    " /> <link rel="stylesheet" href="./card.css?
+    " /> 
+    
+    <link rel="stylesheet" href="./card.css?
     <?php echo filemtime("card.css"); ?>
     " />
+
+    <link rel="stylesheet" href="./action_modal.css?
+    <?php echo filemtime("action_modal.css"); ?>
+    " />
+
+
   </head>
   <body>
 
@@ -102,6 +110,7 @@
     </div>
 
     <?php include '../aeM.php'; ?>
+    <?php include '../aeT.php'; ?>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
@@ -126,6 +135,8 @@
     <script src="load_card.js?version=<?php echo filemtime('load_card.js'); ?>"></script>
     <script src="filter.js?version=<?php echo filemtime('filter.js'); ?>"></script>
     <script src="card_event.js?version=<?php echo filemtime('card_event.js'); ?>"></script>
+    <script src="action_modal.js?version=<?php echo filemtime('action_modal.js'); ?>"></script>
+    <script src="review.js?version=<?php echo filemtime('review.js'); ?>"></script>
    
   </body>
 </html>

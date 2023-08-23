@@ -28,7 +28,7 @@ $(document).ready(function () {
     formData.append('file', this.files[0]); // Append the file
 
     formData.append('id', selected_row_id)
-    alert(selected_row_id)
+  //  alert(selected_row_id)
 
     // Use AJAX to send the file
     $.ajax({

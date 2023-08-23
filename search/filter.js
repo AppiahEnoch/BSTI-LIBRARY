@@ -46,8 +46,8 @@ function sendData() {
         dataType: "json",
         success: function (data, status) {
 
-         // alert(data)
-        createCardsFromJson(data);
+        // alert(data)
+       createCardsFromJson(data);
 
         },
         error: function (xhr, status, error) {
@@ -64,4 +64,9 @@ function sendData() {
         filter.addEventListener('keyup', sendData);
     }
 });
+
+
+
+
+
 

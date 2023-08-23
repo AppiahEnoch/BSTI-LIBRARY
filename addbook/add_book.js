@@ -79,7 +79,7 @@ $(document).ready(function() {
           success: function(response) {
 
             // alert response
-            alert(response);
+           // alert(response);
 
             // reload window
             window.location.reload();
@@ -145,7 +145,7 @@ function get_shelf_description() {
               // Show the detail_shelf_number_row
              //$('#detail_shelf_number_row').removeClass('d-none');
           } else {
-              alert(response.message);
+            //  alert(response.message);
           }
       },
       error: function (xhr, status, error) {

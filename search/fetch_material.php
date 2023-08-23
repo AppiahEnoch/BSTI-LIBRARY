@@ -76,20 +76,22 @@ if($tableName === "ebook") {
     }
     
 
-
+$filePath=null;
 
     if($tableName === "book_shelf_view") {
         $resultArray = array(
             'id' => $data['id'],
             'title' => $data['title'],
             'imageUrl' => $data['image_url'],
-            'description' => $description
+            'description' => $description,
+            'filePath' => $filePath
         );
     }
 
 
     if($tableName === "ebook") {
-$url=$data['file_url'];
+       $url=$data['file_url'];
+       $filePath=$url;
 // check if url contains 'word'
 if (strpos($url, 'word') !== false) {
     $url="../devimage/word.png";
@@ -103,7 +105,8 @@ if (strpos($url, 'word') !== false) {
             'id' => $data['id'],
             'title' => $data['title'],
             'imageUrl' => $url,
-            'description' => $description
+            'description' => $description,
+            'filePath' => $filePath
         );
     }
 

@@ -1,5 +1,4 @@
 function createCardsFromJson(jsonData) {
-    // Locate the container in which we want to add the cards
     var cardRow = document.getElementById('card-row');
 
     // Clear previous cards
@@ -45,14 +44,25 @@ function createCardsFromJson(jsonData) {
         description.className = 'card-description';
         description.textContent = item.description;
 
+        // Add star ratings
+        var ratingCol = document.createElement('div');
+        ratingCol.className = 'col-12 rating-container';
+
+        var ratingDiv = document.createElement('div');
+        ratingDiv.className = 'star-ratings';
+      
+        ratingDiv.innerHTML = generateStarHTML(item.averageRating);
+
         // Append new elements to the card
         imgCol.appendChild(img);
         titleCol.appendChild(title);
         descriptionCol.appendChild(description);
+        ratingCol.appendChild(ratingDiv); // append the ratings
 
         row.appendChild(imgCol);
         row.appendChild(titleCol);
         row.appendChild(descriptionCol);
+        row.appendChild(ratingCol); // append the rating column
 
         card.appendChild(row);
         col.appendChild(card);
@@ -60,7 +70,28 @@ function createCardsFromJson(jsonData) {
         // Append the card to the container
         cardRow.appendChild(col);
     });
+
+    //aeModal("actionModal2");
 }
-// Call this function when you get JSON response from your AJAX call:
-// createCardsFromJson(jsonData);
+
+function generateStarHTML(rating) {
+  //  rating=2;
+    if (typeof rating === 'undefined' || rating === null) {
+        rating = 0; // Set to 0 if undefined
+    }
+    
+    rating = Math.round(rating);
+    let starHTML = "";
+    
+    for (let i = 1; i <= 5; i++) {
+        if (i <= rating) {
+            starHTML += `<i class="fas fa-star filled"></i>`;  // Gold filled star
+        } else {
+            starHTML += `<i class="far fa-star"></i>`;  // Default color outlined star
+        }
+    }
+    return starHTML;
+}
+
+
 
