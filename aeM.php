@@ -1,4 +1,6 @@
 
+
+
 <div class="modal fade" id="reviewModal2" tabindex="-1" aria-labelledby="actionModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg"> <!-- enlarged modal size -->
         <div class="modal-content colorful-modal">
@@ -15,19 +17,19 @@
 
                 <h6>Rate and Review:</h6>
                 <div class="rating-section">
-                    <span class="star" data-value="1" id="star1"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="2" id="star2"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="3" id="star3"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="4" id="star4"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="5" id="star5"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="1" id="star11"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="2" id="star21"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="3" id="star31"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="4" id="star41"><i class="far fa-star"></i></span>
+                    <span class="star" data-value="5" id="star51"><i class="far fa-star"></i></span>
                 </div>
                 <div class="mt-3">
-                    <textarea class="form-control review-textarea" placeholder="Write your review here..." id="reviewText"></textarea>
+                    <textarea class="form-control review-textarea" placeholder="Write your review here..." id="reviewText2"></textarea>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="submitReviewBtn">Submit Review</button>
+                <button type="button" class="btn btn-primary" id="submitReviewBtn2">Submit Review</button>
             </div>
         </div>
     </div>
@@ -36,35 +38,37 @@
 
 
 
-
-
-
-<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="actionModalLabel" aria-hidden="true">
+<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="actionModalLabel">Review Book</h5>
+                <h5 class="modal-title" id="reviewModalLabel">Review Book</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="rating-section">
-                    <span class="star" data-value="1" id="star1"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="2" id="star2"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="3" id="star3"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="4" id="star4"><i class="far fa-star"></i></span>
-                    <span class="star" data-value="5" id="star5"><i class="far fa-star"></i></span>
+                <div class="rating-section mb-3">
+                <span class="star" data-value="1" id="star1" role="button"><i class="far fa-star"></i></span>
+<span class="star" data-value="2" id="star2" role="button"><i class="far fa-star"></i></span>
+<span class="star" data-value="3" id="star3" role="button"><i class="far fa-star"></i></span>
+<span class="star" data-value="4" id="star4" role="button"><i class="far fa-star"></i></span>
+<span class="star" data-value="5" id="star5" role="button"><i class="far fa-star"></i></span>
+
                 </div>
-                <div class="mt-3">
-                    <textarea class="form-control review-textarea" placeholder="Write your review here..." id="reviewText"></textarea>
-                </div>
+                <textarea class="form-control review-textarea mb-3" placeholder="Write your review here..." id="reviewText"></textarea>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="submitReviewBtn">Submit Review</button>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitReviewBtn1">Submit Review</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 
 
 
@@ -91,8 +95,6 @@
             </div>
         </div>
     </div>
-
-
 
 
 

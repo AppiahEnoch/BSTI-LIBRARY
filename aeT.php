@@ -3,6 +3,25 @@
 <!-- BEGIN MY TOASTS -->
 
 
+
+
+<div id="aeToastR" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header bg-primary text-white">
+      <i style="color: white;" class="fa fa-thumbs-up m-1" aria-hidden="true"></i>
+      <strong class="me-auto">success!</strong>
+      <small>done</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+      <p id="toastMessage"></p>
+     
+  </div>
+  <div class="d-flex justify-content-center mt-3">
+          <button type="button" class="btn btn-primary btn-sm" onclick="location.reload();">Reload Page <i class="fa fa-refresh" aria-hidden="true"></i></button>
+      </div>
+</div>
+
+
 <div id="aeToastE" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
    
     <div class="toast-header bg-danger text-white">

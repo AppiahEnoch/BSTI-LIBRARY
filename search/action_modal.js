@@ -37,7 +37,7 @@ function handleReadAction() {
             showToast("aeToastE", "FILE DOWNLOADED", "DOWNLOAD TO READ.", 20);
             aeDownload(file)
         } else {
-            alert("Invalid or unsupported file type.");
+            showToast("aeToastE", "REQUEST FOR THIS BOOK", "ONLY HARD COPY IS AVAILABLE", 20);
         }
     });
 }
@@ -47,6 +47,7 @@ function handleReviewAction() {
 
  aeModal2("reviewModal")
     // Your logic here
+
 }
 
 function handleAddToListAction() {
