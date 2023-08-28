@@ -1,6 +1,21 @@
 
 
 <!-- BEGIN MY TOASTS -->
+<div id="aeToastR_V" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header bg-primary text-white">
+    <i style="color: white;" class="fa fa-thumbs-up m-1" aria-hidden="true"></i>
+    <strong class="me-auto">Review</strong>
+    <small>Review</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    <p id="toastMessage"></p>
+  </div>
+  <div class="d-flex justify-content-center m-3">
+    <button type="button" class="btn btn-secondary btn-sm ms-2" data-bs-dismiss="toast">No</button>
+    <button type="button" class="btn btn-primary btn-sm ms-2" onclick="window.location.href='../search/page.php'">Yes</button>
+  </div>
+</div>
 
 
 
@@ -77,7 +92,33 @@
 
 
 
-    
+    <div id="aeToastYN2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header bg-danger text-white">
+    <i style="color: white;" class="fa fa-question-circle m-1" aria-hidden="true"></i>
+    <strong class="me-auto">Confirm Delete Action!</strong>
+    <small>Confirm!</small>
+    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+  <div class="toast-body">
+    <p id="toastMessage"></p>
+    <div class="row row-cols-2 ">
+      <div class="col text-end">
+        <button id="addtolist" type="button" class="btn btn-success btn-sm me-2">Yes <i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+      </div>
+      <div class="col">
+        <!-- Add data-bs-dismiss="modal" to close the modal -->
+        <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="toast">No <i class="fa fa-thumbs-down" aria-hidden="true"></i> </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 <div id="aeToastYN" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header bg-danger text-white">
 

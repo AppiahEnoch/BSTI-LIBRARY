@@ -124,4 +124,90 @@ body {
 
 #bio-text-wrapper {
   min-height: 20rem;
+}
+
+#viewRrequestModal .modal-content {
+  border-radius: 10px;
+}
+#viewRrequestModal .modal-body {
+  padding: 20px;
+}
+#viewRrequestModal .card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+#viewRrequestModal .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#viewRrequestModal .card .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  width: 100%;
+}
+#viewRrequestModal .card .card-body {
+  padding: 15px;
+}
+#viewRrequestModal .card .card-body .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+#viewRrequestModal .card .card-body .card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.delete-icon {
+  transition: all 0.3s ease-in-out;
+}
+.delete-icon:hover {
+  color: red;
+  transform: scale(1.2);
+  background-color: #140330;
+}
+
+.card-img-top img {
+  max-width: 1rem;
+}
+
+#uniqueNotificationModal .modal-dialog {
+  max-width: 800px;
+  margin: 1.75rem auto;
+}
+#uniqueNotificationModal .modal-header {
+  background-color: #007bff;
+  color: white;
+}
+#uniqueNotificationModal .modal-header .modal-title {
+  font-weight: bold;
+}
+#uniqueNotificationModal .modal-body .card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+#uniqueNotificationModal .modal-body .card.my-3 {
+  margin-bottom: 1.5rem !important;
+  margin-top: 1.5rem !important;
+}
+#uniqueNotificationModal .modal-body .card .card-header {
+  background-color: #f8f9fa;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+#uniqueNotificationModal .modal-body .card .card-body {
+  padding: 1.25rem;
+}
+#uniqueNotificationModal .modal-body .card .card-body p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+#uniqueNotificationModal .modal-body .card .card-body p strong {
+  color: #333;
 }/*# sourceMappingURL=portal.css.map */

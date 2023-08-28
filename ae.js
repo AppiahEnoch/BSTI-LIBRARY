@@ -413,35 +413,45 @@ function myAjax1() {
   }
   
   
-                function showToast(toastID,title,message,positionInPercentage) {
-              //   showToast( "aeToastE","new Toast","toast","20");
-                  //change to the toast Id to toastID
-                  var toast = document.getElementById(toastID);
+  function showToast(toastID, title, message, positionInPercentage) {
+    // Close all existing toasts
+    var existingToasts = document.querySelectorAll('.toast.show');
+    existingToasts.forEach(function(existingToast) {
+        var bootstrapToast = bootstrap.Toast.getInstance(existingToast);
+        if (bootstrapToast) {
+            bootstrapToast.hide();
+        }
+    });
+
+    // Get the toast element by ID
+    var toast = document.getElementById(toastID);
+
+    // Update the title if it's not null
+    if (title != null) {
+        toast.getElementsByClassName("toast-header")[0]
+        .getElementsByTagName("strong")[0].innerText = title;
+    }
   
-                  // change titlte of the toast to the message
-                  //check if the title is not null
-                  if(title != null) {
-                      toast.getElementsByClassName("toast-header")[0]
-                      .getElementsByTagName("strong")[0].innerText = title;
-                  }
-              
-                  //check if the message is not null
-                  if(message != null) {
-                      toast.getElementsByClassName("toast-body")[0].innerText = message;
-                  }
+    // Update the message if it's not null
+    if (message != null) {
+        toast.getElementsByClassName("toast-body")[0].innerText = message;
+    }
   
-                  toast.style.position = "fixed";
+    // Set toast position
+    toast.style.position = "fixed";
   
-                  if(positionInPercentage != null) {
-                      toast.style.top = positionInPercentage + "%";
-                  }
-                  toast.style.left = "50%";
-                  toast.style.transform = "translate(-50%, -50%)";
-                  toast.style.zIndex = "99999";
-                  var toast = new bootstrap.Toast(toast);
-                  toast.show();
-              
-              }
+    if (positionInPercentage != null) {
+        toast.style.top = positionInPercentage + "%";
+    }
+    toast.style.left = "50%";
+    toast.style.transform = "translate(-50%, -50%)";
+    toast.style.zIndex = "99999";
+
+    // Show the toast
+    var bootstrapToast = new bootstrap.Toast(toast);
+    bootstrapToast.show();
+}
+
   
   
   function showIdAndHideOthers(idToShow) {
@@ -505,32 +515,45 @@ function myAjax1() {
   
   
   
-         function showToastYN(toastID, title, message, positionInPercentage) {
-                var toast = document.getElementById(toastID);
-            
-                // Change title of the toast
-                if (title != null) {
-                    toast.getElementsByClassName("toast-header")[0]
-                        .getElementsByTagName("strong")[0].innerText = title;
-                }
-            
-                // Change message of the toast
-                if (message != null) {
-                    toast.querySelector("#toastMessage").innerText = message;
-                }
-            
-                toast.style.position = "fixed";
-            
-                if (positionInPercentage != null) {
-                    toast.style.top = positionInPercentage + "%";
-                }
-                toast.style.left = "50%";
-                toast.style.transform = "translate(-50%, -50%)";
-                toast.style.zIndex = "99999";
-            
-                var bsToast = new bootstrap.Toast(toast);
-                bsToast.show();
-            }
+  function showToastYN(toastID, title, message, positionInPercentage) {
+    // Close all existing toasts
+    var existingToasts = document.querySelectorAll('.toast.show');
+    existingToasts.forEach(function(existingToast) {
+        var bootstrapToast = bootstrap.Toast.getInstance(existingToast);
+        if (bootstrapToast) {
+            bootstrapToast.hide();
+        }
+    });
+
+    // Get the toast element by its ID
+    var toast = document.getElementById(toastID);
+  
+    // Change the title of the toast
+    if (title != null) {
+        toast.getElementsByClassName("toast-header")[0]
+            .getElementsByTagName("strong")[0].innerText = title;
+    }
+
+    // Change the message of the toast
+    if (message != null) {
+        toast.querySelector("#toastMessage").innerText = message;
+    }
+
+    // Set the toast position
+    toast.style.position = "fixed";
+
+    if (positionInPercentage != null) {
+        toast.style.top = positionInPercentage + "%";
+    }
+    toast.style.left = "50%";
+    toast.style.transform = "translate(-50%, -50%)";
+    toast.style.zIndex = "99999";
+
+    // Show the new toast
+    var bsToast = new bootstrap.Toast(toast);
+    bsToast.show();
+}
+
             
   function closeToast(toastID) {
     var toastElement = document.getElementById(toastID);

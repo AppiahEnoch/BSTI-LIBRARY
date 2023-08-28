@@ -1,0 +1,36 @@
+CREATE VIEW all_materials AS
+SELECT
+  id,
+  material_number,
+  material_type,
+  shelfno,
+  uniqueid,
+  title,
+  author,
+  description,
+  image_url,
+  recdate,
+  cellnumber,
+  materialdate,
+  NULL AS file_url,
+  NULL AS year
+FROM
+  book
+UNION ALL
+SELECT
+  id,
+  NULL AS material_number,
+  material_type,
+  NULL AS shelfno,
+  NULL AS uniqueid,
+  title,
+  author,
+  description,
+  NULL AS image_url,
+  recdate,
+  NULL AS cellnumber,
+  NULL AS materialdate,
+  file_url,
+  year
+FROM
+  ebook;

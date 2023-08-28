@@ -6,6 +6,31 @@ var user_level = 1;
 
 
 $(document).ready(function () {
+$("#btAlert").click(function () { 
+aeModal2("adminAlertModal")
+
+})
+
+$("#cardNotification").click(function () { 
+
+  aeModal2("notificationModal")
+
+})
+
+$("#openDeleteModal").click(function () { 
+
+  fetchNotifications()
+
+})
+
+$("#cardRequest").click(function () { 
+  aeModal2("modalApproval_requests")
+
+})
+
+
+
+
   $('#registrationForm').submit(function (e) {
     e.preventDefault();
     user_level = 1;

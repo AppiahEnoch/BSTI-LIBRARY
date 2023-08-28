@@ -1,0 +1,92 @@
+// Wrapper to center the form on the page
+html, body {
+    background: url("../images/bg/3.svg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  
+    .row, .col-12, .col-sm-10, .col-md-8, .col-lg-6 {
+      margin: 0;
+      padding: 0;
+    }
+  
+    img{
+      max-width: 5rem;
+      max-height: 5rem;
+
+    }
+    
+  // Custom form styling
+  .custom-form {
+    text-align: center;
+    width: 25rem;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+    
+
+
+
+
+
+  
+  // Other styles
+    
+  // Image styling
+  #resourceImage {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+    
+  // Request ID styling
+  #requestID {
+    font-weight: bold;
+  }
+    
+  // Buttons column
+  .d-flex {
+    flex-direction: column;
+    
+    // Button styling
+    button {
+      margin: 0.5rem 0;
+      width: 100%;
+    }
+
+
+
+    
+  }
+
+
+  
+  #detailedDescription {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    margin: auto;
+    max-width: 20rem;
+    max-height: 10rem;
+    overflow: scroll;
+    text-align: start;
+  }
+  
+  // Styles for the request ID
+  #requestID {
+    font-weight: bold;
+    color: #a600e7;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+}

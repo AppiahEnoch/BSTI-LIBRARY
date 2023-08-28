@@ -17,14 +17,15 @@
     />
 
     <link rel="icon" type="image/jpg" href="../devimage/round.jpg" />
-    <link rel="stylesheet" href="admin.css" />
-    <link rel="stylesheet" href="codeSCSS.css" />
+    <link rel="stylesheet" href="admin.css?<?php echo filemtime("admin.css"); ?>" />
+<link rel="stylesheet" href="codeSCSS.css?<?php echo filemtime("codeSCSS.css"); ?>" />
+<link rel="stylesheet" href="admin-xm.css?<?php echo filemtime("admin-xm.css"); ?>" />
+<link rel="stylesheet" href="admin-sm.css?<?php echo filemtime("admin-sm.css"); ?>" />
+<link rel="stylesheet" href="admin-lg.css?<?php echo filemtime("admin-lg.css"); ?>" />
+<link rel="stylesheet" href="animation.css?<?php echo filemtime("animation.css"); ?>" />
+<link rel="stylesheet" href="modal.css?<?php echo filemtime("modal.css"); ?>" />
 
-    <link rel="stylesheet" href="admin-xm.css" />
-    <link rel="stylesheet" href="admin-sm.css" />
-    <link rel="stylesheet" href="admin-lg.css" />
 
-    <link rel="stylesheet" href="animation.css" />
     
   </head>
   <body>
@@ -214,12 +215,13 @@
               <li class="nav-item">
                 <div class="dropdown">
                   <a
+                  id="btAlert"
                     class="btn btn-secondary"
                     href="#" 
                     role="button"
                     aria-expanded="false"
                   >
-                    Request
+                    Alert
 
                     <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
@@ -662,6 +664,12 @@
       </div>
     </div>
 
+
+
+    <?php
+    include "aeM.php";
+    ?>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
@@ -688,5 +696,8 @@
     <script src="delete.js?version=<?php echo filemtime('delete.js'); ?>"></script>
     <script src="code.js?version=<?php echo filemtime('code.js'); ?>"></script>
     <script src="emptySystem.js?version=<?php echo filemtime('emptySystem.js'); ?>"></script>
+    <script src="insert_notification.js?version=<?php echo filemtime('insert_notification.js'); ?>"></script>
+    <script src="fetch_notifications.js?version=<?php echo filemtime('fetch_notifications.js'); ?>"></script>
+    <script src="fetch_approval_requests.js?version=<?php echo filemtime('fetch_approval_requests.js'); ?>"></script>
   </body>
 </html>

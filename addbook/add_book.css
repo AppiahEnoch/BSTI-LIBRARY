@@ -236,4 +236,11 @@ h6.text-center {
   position: absolute;
   top: 0rem;
   left: 2rem;
+}
+
+#editable-table {
+  max-width: 100%;
+  background-color: #f2f2f2;
+  overflow-y: auto;
+  overflow-x: auto;
 }/*# sourceMappingURL=add_book.css.map */

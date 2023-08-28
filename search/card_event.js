@@ -1,8 +1,9 @@
 var materialData=null;
-
+var recordID_g=null;
+var tableName_g=null;
+var reviewData=null;
 
 $(document).ready(function() {
-
     $('#card-row').on('click', '.card', function() {
         var itemIdFull = $(this).find('.d-none').text();
         var itemIdArray = itemIdFull.split('_'); // split the string into an array on underscore
@@ -13,6 +14,10 @@ $(document).ready(function() {
         // if tableName  is undifined tableName= book_shelf_view
         if (tableName == undefined) {
             tableName = "book_shelf_view";
+            tableName_g="book";
+        }
+        else{
+          tableName_g=tableName;
         }
 
         validate(itemId, tableName) 
@@ -21,6 +26,9 @@ $(document).ready(function() {
 
 
 function validate(id, tableName) {
+  recordID_g=id;
+
+
     $.ajax({
       type: "post",
       data: {
@@ -50,6 +58,7 @@ function validate(id, tableName) {
 
 function showModel(id, tableName) {
   materialData=null;
+
     $.ajax({
       type: "post",
       data: {
@@ -61,8 +70,9 @@ function showModel(id, tableName) {
       dataType: "json",
       success: function (data, status) {
         materialData=data;
+       // alert(materialData);
+     
         aeModal("actionModal")
-       
       },
       error: function (xhr, status, error) {
         alert(error);

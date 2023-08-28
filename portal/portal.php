@@ -18,6 +18,11 @@
 <link rel="stylesheet" href="newBooks.css?version=<?php echo filemtime('newBooks.css'); ?>" />
 <link rel="stylesheet" href="aeN.css?version=<?php echo filemtime('aeN.css'); ?>" />
 
+<link rel="stylesheet" href="./fetch_reading_list.css?
+    <?php echo filemtime("fetch_reading_list.css"); ?>
+    " />
+
+
 
     <link
     rel="icon"
@@ -117,7 +122,7 @@
             <div class="col-12 col-md-4">
               <div id="notification-card" class="card">
                 <div class="card-body">
-                  <span class="badge bg-primary rounded-pill">4</span>
+                  <span id="notification-badge" class="badge bg-primary rounded-pill">0</span>
                   <i class="bi bi-bell"></i>
                   <h4 class="card-title">Notifications</h4>
                   <p class="card-text">Stay updated with library announcements.</p>
@@ -164,11 +169,11 @@
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div id="other-resources-card" class="card">
+              <div id="view-request" class="card">
                 <div class="card-body">
                   <i class="bi bi-archive"></i>
-                  <h4 class="card-title">Other Resources</h4>
-                  <p class="card-text">Access additional resources available in the library.</p>
+                  <h4 class="card-title">MY REQUESTS</h4>
+                  <p class="card-text">VIEW YOUR REQUESTS.</p>
                 </div>
               </div>
             </div>
@@ -179,7 +184,7 @@
 
       </div>
 
-      <div id="last-row" class="container-fluid">
+      <div id="last-row" class="container-fluid d-none">
         <div class="row gap-2">
           <div class="col-sm">
             <div class="card position-relative">
@@ -227,8 +232,8 @@
         </div>
       </div>
 
-
       <?php
+      include './aeM2.php';
       include '../aeM.php';
       include '../aeT.php';
       include '../aeS.php';
@@ -262,15 +267,13 @@
       <script src="fetchBio.js?version=<?php echo filemtime('fetchBio.js'); ?>"></script>
       <script src="updatePassport.js?version=<?php echo filemtime('updatePassport.js'); ?>"></script>
       <script src="link.js?version=<?php echo filemtime('link.js'); ?>"></script>
+      <script src="fetch_reading_list.js?version=<?php echo filemtime('fetch_reading_list.js'); ?>"></script>
+      <script src="fetchViewRequest.js?version=<?php echo filemtime('fetchViewRequest.js'); ?>"></script>
+      <script src="fetch_notification.js?version=<?php echo filemtime('fetch_notification.js'); ?>"></script>
 
-      <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var myModal = new bootstrap.Modal(document.getElementById('notificationsModal'), {
-    backdrop: 'static' // Optional: you can set the backdrop property
-  });
-  myModal.show();
-});
-</script>
+
+
+
 
   </body>
 </html>

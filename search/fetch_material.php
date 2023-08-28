@@ -1,6 +1,8 @@
 <?php
+session_start();
 include "../config/config.php";
 
+$filePath=null;
 // Check if the request contains an ID and a table name
 if (!isset($_POST['id']) || !isset($_POST['table'])) {
     http_response_code(400);
@@ -76,15 +78,15 @@ if($tableName === "ebook") {
     }
     
 
-$filePath=null;
 
     if($tableName === "book_shelf_view") {
+        $tableName="book";
         $resultArray = array(
             'id' => $data['id'],
             'title' => $data['title'],
             'imageUrl' => $data['image_url'],
             'description' => $description,
-            'filePath' => $filePath
+            'tableName' => $tableName
         );
     }
 
@@ -106,10 +108,13 @@ if (strpos($url, 'word') !== false) {
             'title' => $data['title'],
             'imageUrl' => $url,
             'description' => $description,
-            'filePath' => $filePath
+            'filePath' => $filePath,
+            'tableName' => $tableName
+
         );
     }
 
+    $_SESSION['materialData'] = json_encode($resultArray);
     echo json_encode($resultArray);
 } else {
     echo "No data found.";

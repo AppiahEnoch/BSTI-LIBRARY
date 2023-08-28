@@ -27,15 +27,13 @@
   <body>
 
            
-  <a class="go-back" href="../index.php" data-bs-toggle="tooltip" data-bs-placement="top" title="Go Back">
+  <a id="goBack" class="go-back" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Go Back">
           <i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i>
       </a>
 
     <div id="wrapper2" class="container-fluid search-wrapper">
       <h5>Search By</h5>
       <div class="container">
-
-
         <div class="row">
           <div class="col-lg col-md-6">
             <label for="classification" class="d-none d-md-block"
@@ -137,6 +135,9 @@
     <script src="card_event.js?version=<?php echo filemtime('card_event.js'); ?>"></script>
     <script src="action_modal.js?version=<?php echo filemtime('action_modal.js'); ?>"></script>
     <script src="review.js?version=<?php echo filemtime('review.js'); ?>"></script>
+    <script src="goBack.js?version=<?php echo filemtime('goBack.js'); ?>"></script>
+    <script src="reading_list.js?version=<?php echo filemtime('reading_list.js'); ?>"></script>
+ 
    
   </body>
 </html>

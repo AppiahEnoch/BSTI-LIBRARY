@@ -20,10 +20,7 @@ else{
     exit();
 }
 
-
-
 $userExist=0;
-
 
 // check if username already exist  in database
 $sql = "SELECT * FROM user0 WHERE user0_name=? and user0_password=?";

@@ -44,7 +44,7 @@ function sendData() {
         dataType: "json",
         success: function (data, status) {
 
-        // alert(data)
+         //alert(data)
        createCardsFromJson(data);
 
         },

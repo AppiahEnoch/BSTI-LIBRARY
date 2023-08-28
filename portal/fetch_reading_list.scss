@@ -1,0 +1,58 @@
+#readingMaterialsList{
+
+    .resource-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  
+      .d-none {
+        display: none;
+      }
+  
+      .resource-image {
+        max-width: 5rem;
+        margin-bottom: 1rem;
+      }
+  
+      .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        p {
+          margin: 0;
+  
+          .resource-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 5px;
+          }
+  
+          .resource-description {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  
+  
+#viewRrequestModal{
+  .card-img-top {
+    width: 3rem !important;
+    height: 3rem !important;
+
+  
+  }
+
+}
+
+  
+  
+

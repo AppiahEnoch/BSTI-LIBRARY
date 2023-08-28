@@ -129,7 +129,7 @@ function getReviews($materialId, $type) {
     // Decide the table based on type (book or ebook)
     $sourceTable = ($type == "ebook") ? "ebook" : "book";
 
-    $reviewsQuery = "SELECT review_text, rating FROM `reviews` WHERE resource_id = $materialId AND sourcetable = '$sourceTable'";
+    $reviewsQuery = "SELECT * FROM `reviews` WHERE resource_id = $materialId AND sourcetable = '$sourceTable'";
     $reviewResult = $conn->query($reviewsQuery);
 
     $reviews = [];
@@ -138,7 +138,9 @@ function getReviews($materialId, $type) {
     while ($reviewRow = $reviewResult->fetch_assoc()) {
         $reviews[] = [
             'message' => $reviewRow['review_text'],
-            'rating' => $reviewRow['rating']
+            'rating' => $reviewRow['rating'],
+            'source_table' => $reviewRow['sourcetable'],
+            'reID' => $reviewRow['resource_id']
         ];
         $totalRating += $reviewRow['rating'];
         $reviewCount++;
