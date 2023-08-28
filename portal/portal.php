@@ -89,12 +89,12 @@
             Registered:
             <input type="date" id="registration_date" name="registration_date" value="2023-01-01" class="text-light bg-transparent border-0" readonly>
         </div>
-        <div class="editable-field">
+        <div class="editable-field d-none">
             <i class="fa fa-heart" aria-hidden="true"></i>
             Favorite Category:
             <input type="text" id="favorite_category" name="favorite_category" value="Science Fiction" class="text-light bg-transparent border-0" readonly onfocus="this.removeAttribute('readonly');">
         </div>
-        <div class="editable-field">
+        <div class="editable-field d-none">
             <i class="fa fa-book" aria-hidden="true"></i>
             Recent Book:
             <input type="text" id="recent_book" name="recent_book" value="Dune" class="text-light bg-transparent border-0" readonly>
