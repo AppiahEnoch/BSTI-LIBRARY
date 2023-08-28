@@ -84,7 +84,7 @@
             Date of Birth:
             <input type="date" id="user_dob" name="user_dob" value="1990-02-02" class="text-light bg-transparent border-0" readonly onfocus="this.removeAttribute('readonly');">
         </div>
-        <div class="editable-field">
+        <div class="editable-field d-none">
             <i class="fa fa-calendar" aria-hidden="true"></i>
             Registered:
             <input type="date" id="registration_date" name="registration_date" value="2023-01-01" class="text-light bg-transparent border-0" readonly>
