@@ -5,6 +5,20 @@ return new bootstrap.Tooltip(tooltipTriggerEl)
 
 $(document).ready(function () {
 
+  $('#material_type').change(function () {
+    var selectedMaterial = $(this).val();
+    
+    if (selectedMaterial === 'journals') {
+      $('#classification option[value="Fiction"]').hide();
+      // If 'Fiction' is already selected, reset the classification dropdown
+      if($('#classification').val() === 'Fiction') {
+        $('#classification').val('');
+      }
+    } else {
+      $('#classification option[value="Fiction"]').show();
+    }
+  });
+
     // Listen for change event on the classification select element
     $("#classification").change(function () {
         var selectedValue = $(this).val();

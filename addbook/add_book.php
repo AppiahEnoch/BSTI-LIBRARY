@@ -112,6 +112,7 @@
                 <option value="Fiction">Fiction</option>
                 <option value="Non-Fiction">Non-Fiction</option>
               </select>
+            
             </div>
             <div class="wrapper1 d-none mt-0">
               <div class="input-group mt-0">

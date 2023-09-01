@@ -286,7 +286,7 @@
       ></span>
       <input
          required
-        type="password"
+        type="text"
         class="form-control"
         id="regUserName"
         placeholder="username"
@@ -294,7 +294,7 @@
       <span class="input-group-text">
         <i
           onclick=" togglePasswordVisibility('regUserName', 'toggleregUserName')"
-          class="far fa-eye-slash"
+          class="far fa-eye-slash d-none"
           id="toggleregUserName"
           style="cursor: pointer"
         ></i>
@@ -772,6 +772,7 @@
 <script src="reset_password.js?version=<?php echo filemtime('reset_password.js'); ?>"></script>
 <script src="forgot_password.js?version=<?php echo filemtime('forgot_password.js'); ?>"></script>
 <script src="login.js?version=<?php echo filemtime('login.js'); ?>"></script>
+<script src="autofill.js?version=<?php echo filemtime('autofill.js'); ?>"></script>
 
 
  

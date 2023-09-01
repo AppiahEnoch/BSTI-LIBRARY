@@ -1,0 +1,9 @@
+DELIMITER //
+CREATE TRIGGER update_has_been_addressed_after_update
+AFTER UPDATE ON request
+FOR EACH ROW
+BEGIN
+    UPDATE request SET has_been_addressed = 1 WHERE id = NEW.id;
+END;
+//
+DELIMITER ;

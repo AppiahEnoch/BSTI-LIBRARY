@@ -5,7 +5,54 @@ var code_length = 8;
 var user_level = 1;
 
 
+
+
+
+
+
+function getBubble(){
+  $.ajax({
+    type: "post",
+    url: "bubble.php",
+    dataType: "json",
+    success: function (data, status) {
+      if (data.status === "success") {
+        $("#noticeBubble").text(data.count);
+      } else {
+        showToast("aeToastE", "Error", "Could not fetch notification count", "20");
+      }
+    },
+    error: function (xhr, status, error) {
+      showToast("aeToastE", "Error", "An error occurred", "20");
+    },
+  });
+}
+
+
+
+
 $(document).ready(function () {
+
+
+  getBubble()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $("#btAlert").click(function () { 
 aeModal2("adminAlertModal")
 

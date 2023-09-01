@@ -221,9 +221,14 @@
                     role="button"
                     aria-expanded="false"
                   >
-                    Alert
+                  <div class="alert-wrapper">
+  Alert
+  <div class="notification-wrapper">
+    <i class="fa fa-bell" aria-hidden="true"></i>
+    <span id="noticeBubble" class="badge rounded-pill bg-primary notification-badge">4</span>
+  </div>
+</div>
 
-                    <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
 
                   <ul class="dropdown-menu d-none">
@@ -238,7 +243,7 @@
                 </div>
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item d-none">
                 <div class="dropdown">
                   <a
                   id="btEmptySystem"
