@@ -59,3 +59,7 @@ function updateField(field_name, field_value) {
     var pattern = /^[0-9]{10}$/;
     return pattern.test(phone);
   }
+
+
+
+  
