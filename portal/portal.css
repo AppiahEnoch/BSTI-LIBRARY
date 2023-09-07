@@ -62,7 +62,8 @@ body {
   height: 40rem;
 }
 #wrapper1 #user-actions .card {
-  background-color: #59359a;
+  background-color: #c8c1d4;
+  background-color: #c8c1d4;
   height: 10rem;
   transition: transform 0.3s ease-in-out;
 }

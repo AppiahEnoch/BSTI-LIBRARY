@@ -72,8 +72,43 @@ $(document).ready(function(){
 
   $("#sendRequest").click(function(e) {
     e.preventDefault();
-//alert(materialData.id)
+  // Request user's day of birth with validation
+let day = prompt("Please enter your day of birth (DD):");
+if (!day || !/^([1-9]|[12][0-9]|3[01])$/.test(day)) {
+  alert("Please enter a valid day between 1 and 31.");
+  return;
+}
 
+// Request user's month of birth with validation
+let month = prompt("Please enter your month of birth (MM):");
+if (!month || !/^([1-9]|1[012])$/.test(month)) {
+  alert("Please enter a valid month between 1 and 12.");
+  return;
+}
+
+// Request user's year of birth with validation
+let year = prompt("Please enter your year of birth (YYYY):");
+if (!year || !/^\d{4}$/.test(year)) {
+  alert("Please enter a valid 4-digit year.");
+  return;
+}
+
+let dob = `${year}-${month}-${day}`;
+let dobDate = new Date(dob);
+let currentDate = new Date();
+let age = currentDate.getFullYear() - dobDate.getFullYear();
+let monthDiff = currentDate.getMonth() - dobDate.getMonth();
+
+// If the birth month hasn't occurred this year, subtract a year from the age
+if (monthDiff < 0 || (monthDiff === 0 && currentDate.getDate() < dobDate.getDate())) {
+  age--;
+}
+
+// Check age
+if (age <= 17) {
+  alert("You must be 18 years or more to submit a request.");
+  return;
+}
    
     
     $.ajax({
