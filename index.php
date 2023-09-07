@@ -413,7 +413,7 @@ LATEST NEWS CARDS BELOW
 -->
 
 <div id="recent-news" class="container-fluid text-center">
-  <h3  id="newBooks"> <span id="lbNewlyArrived">THE DEVELOPERS<i id="newArrow" class="fa fa-arrow-down" aria-hidden="true"></i></span></h3>
+  <h3  id="newBooks"> <span id="lbNewlyArrived">BSTI <i id="newArrow" class="fa fa-arrow-down" aria-hidden="true"></i></span></h3>
 </div>
 
 <div id="news-card-wrapper" class="container-fluid">
@@ -422,30 +422,30 @@ LATEST NEWS CARDS BELOW
      
       <div class="col-12 col-sm-4">
         <div class="card position-relative">
-          <h6 class="title mb-0">SULEMANA AYUBA:5191040833</h6>
+          <h6 class="title mb-0 d-none">SULEMANA AYUBA:5191040833</h6>
         
           <div class="card-body">
-            <img class="img-fluid" src="developerimage/a1.jpg" alt="">
+            <img class="img-fluid" src="developerimage/n1.jpg" alt="">
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-4">
         <div class="card position-relative">
    
-          <h6 class="title mb-0">SARPONG MENSAH HENRY:5191040824</h6>
+          <h6 class="title mb-0 d-none">SARPONG MENSAH HENRY:5191040824</h6>
         
           <div class="card-body">
-          <img class="img-fluid" src="developerimage/a2.jpg" alt="">
+          <img class="img-fluid" src="developerimage/n2.jpg" alt="">
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-4">
         <div class="card position-relative">
     
-          <h6 class="title mb-0">ABUGRI ABUBAKAR SADIK:5191040828</h6>
+          <h6 class="title mb-0 d-none">ABUGRI ABUBAKAR SADIK:5191040828</h6>
         
           <div class="card-body">
-          <img class="img-fluid" src="developerimage/a3-1.jpg" alt="">
+          <img class="img-fluid" src="developerimage/n1.jpg" alt="">
           </div>
         </div>
       </div>
